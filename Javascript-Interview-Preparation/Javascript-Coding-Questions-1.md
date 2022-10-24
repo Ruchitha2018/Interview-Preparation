@@ -66,3 +66,48 @@ d = c;
 c.greeting = 'Hello';
 console.log(d.greeting);
 ```
+
+#### 7.
+```
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Ruchitha', 'Deshpande');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+
+```
+---
+#### 8.
+
+```
+const foo = () => console.log('First');
+const bar = () => setTimeout(() => console.log('Second'));
+const baz = () => console.log('Third');
+
+bar();
+foo();
+baz()
+```
+---
+#### 9.
+```
+<div onclick="console.log('first div')">
+  <div onclick="console.log('second div')">
+    <button onclick="console.log('button')">
+      Click!
+    </button>
+  </div>
+</div>
+```
+
+#### 10.
+
+```
+
+```
